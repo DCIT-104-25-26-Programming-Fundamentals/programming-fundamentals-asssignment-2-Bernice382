@@ -48,15 +48,14 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
+
 char getGrade(int score)
 {
-    // Validate the score
     if (score < 0 || score > 100)
     {
         return '\0';
     }
 
-    // Determine the grade
     if (score >= 80)
     {
         return 'A';
@@ -99,3 +98,4 @@ int main()
 
     return 0;
 }
+
