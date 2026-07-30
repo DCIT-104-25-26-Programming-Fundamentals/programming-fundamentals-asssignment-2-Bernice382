@@ -63,14 +63,9 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-using namespace std;
+using namespace st;
 
-#include <iostream>
-#include <iomanip>
-#include <string>
-using namespace std;
 
-// Function to display a matrix
 void displayMatrix(int matrix[10][10], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
@@ -83,7 +78,6 @@ void displayMatrix(int matrix[10][10], int rows, int cols)
     }
 }
 
-// PART A: Transpose a matrix
 void transposeMatrix(int matrix[10][10], int rows, int cols)
 {
     int transpose[10][10];
@@ -100,7 +94,6 @@ void transposeMatrix(int matrix[10][10], int rows, int cols)
     displayMatrix(transpose, cols, rows);
 }
 
-// PART B: Add two matrices
 void addMatrices(int matrixA[10][10], int matrixB[10][10],
                  int rows, int cols)
 {
@@ -118,7 +111,6 @@ void addMatrices(int matrixA[10][10], int matrixB[10][10],
     displayMatrix(sum, rows, cols);
 }
 
-// PART C: Multiply two matrices
 void multiplyMatrices(int matrixA[10][10], int matrixB[10][10],
                       int rowsA, int colsA, int colsB)
 {
@@ -143,10 +135,6 @@ void multiplyMatrices(int matrixA[10][10], int matrixB[10][10],
 
 int main()
 {
-    // ============================================================
-    // PART A: TRANSPOSE
-    // ============================================================
-
     int matrix[10][10];
     int rows, cols;
 
@@ -180,14 +168,8 @@ int main()
     cout << endl;
     transposeMatrix(matrix, rows, cols);
 
-    // ============================================================
-    // PART B: ADD TWO MATRICES
-    // ============================================================
-
     int matrixA[10][10];
     int matrixB[10][10];
-
-    int rowsB, colsB;
 
     cout << endl;
     cout << "PART B - Matrix Addition" << endl;
@@ -204,7 +186,6 @@ int main()
         return 0;
     }
 
-    cout << endl;
     cout << "Enter elements of Matrix A:" << endl;
 
     for (int i = 0; i < rows; i++)
@@ -216,7 +197,6 @@ int main()
         }
     }
 
-    cout << endl;
     cout << "Enter elements of Matrix B:" << endl;
 
     for (int i = 0; i < rows; i++)
@@ -230,10 +210,6 @@ int main()
 
     cout << endl;
     addMatrices(matrixA, matrixB, rows, cols);
-
-    // ============================================================
-    // PART C: MATRIX MULTIPLICATION
-    // ============================================================
 
     int matrixC[10][10];
     int matrixD[10][10];
@@ -264,7 +240,6 @@ int main()
         return 0;
     }
 
-    // Check multiplication condition
     if (colsC != rowsD)
     {
         cout << "Error: Number of columns in Matrix A must equal "
@@ -272,7 +247,6 @@ int main()
         return 0;
     }
 
-    cout << endl;
     cout << "Enter elements of Matrix A:" << endl;
 
     for (int i = 0; i < rowsC; i++)
@@ -284,7 +258,6 @@ int main()
         }
     }
 
-    cout << endl;
     cout << "Enter elements of Matrix B:" << endl;
 
     for (int i = 0; i < rowsD; i++)
