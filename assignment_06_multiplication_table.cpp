@@ -56,10 +56,7 @@
 
 #include <iostream>
 using namespace std;
-#include <iostream>
-using namespace std;
 
-// PART A: Print a single multiplication table
 void printSingleTable(int number)
 {
     cout << "Multiplication Table for " << number << ":" << endl;
@@ -71,7 +68,6 @@ void printSingleTable(int number)
     }
 }
 
-// PART B: Print multiplication tables from 1 to N
 void printTablesUpToN(int n)
 {
     for (int number = 1; number <= n; number++)
@@ -84,7 +80,6 @@ void printTablesUpToN(int n)
                  << number * i << endl;
         }
 
-        // Separator between tables
         if (number < n)
         {
             cout << "---------------------------" << endl;
@@ -94,10 +89,6 @@ void printTablesUpToN(int n)
 
 int main()
 {
-    // ============================================================
-    // PART A: SINGLE TABLE
-    // ============================================================
-
     int number;
 
     cout << "PART A - Single Multiplication Table" << endl;
@@ -111,10 +102,6 @@ int main()
     }
 
     printSingleTable(number);
-
-    // ============================================================
-    // PART B: TABLES FROM 1 TO N
-    // ============================================================
 
     int n;
 
