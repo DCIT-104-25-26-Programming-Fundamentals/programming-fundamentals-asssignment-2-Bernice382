@@ -65,7 +65,6 @@
 #include <string>
 using namespace st;
 
-
 void displayMatrix(int matrix[10][10], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
