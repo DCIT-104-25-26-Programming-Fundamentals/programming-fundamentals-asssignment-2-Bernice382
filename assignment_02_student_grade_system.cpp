@@ -48,7 +48,6 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-
 char getGrade(int score)
 {
     if (score < 0 || score > 100)
