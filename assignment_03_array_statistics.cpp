@@ -44,6 +44,7 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
+
 double calculateSum(double numbers[], int n)
 {
     double sum = 0;
@@ -99,7 +100,6 @@ int main()
     cout << "How many numbers? ";
     cin >> n;
 
-    // Check if n is positive
     if (n <= 0)
     {
         cout << "Error: Number of values must be positive." << endl;
@@ -108,20 +108,17 @@ int main()
 
     double numbers[n];
 
-    // Get numbers from the user
     for (int i = 0; i < n; i++)
     {
         cout << "Enter number " << i + 1 << ": ";
         cin >> numbers[i];
     }
 
-    // Calculate results
     double sum = calculateSum(numbers, n);
     double average = calculateAverage(numbers, n);
     double maximum = findMaximum(numbers, n);
     double minimum = findMinimum(numbers, n);
 
-    // Display results
     cout << endl;
     cout << "Results:" << endl;
     cout << "Sum:     " << sum << endl;
