@@ -37,18 +37,13 @@
 #include <iostream>
 using namespace std;
 
-#include <iostream>
-using namespace std;
-
 bool isPrime(int number)
 {
-    // Numbers less than 2 are not prime
     if (number < 2)
     {
         return false;
     }
 
-    // Check if the number has any divisor other than 1 and itself
     for (int i = 2; i < number; i++)
     {
         if (number % i == 0)
@@ -78,3 +73,4 @@ int main()
 
     return 0;
 }
+
