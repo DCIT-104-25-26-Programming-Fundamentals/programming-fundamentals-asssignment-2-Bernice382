@@ -50,10 +50,7 @@
 
 #include <iostream>
 using namespace std;
-#include <iostream>
-using namespace std;
 
-// PART A: Print the first N Fibonacci terms
 void printFibonacci(int n)
 {
     int first = 0;
@@ -73,10 +70,8 @@ void printFibonacci(int n)
     cout << endl;
 }
 
-// PART B: Check if a number is a Fibonacci number
 bool isFibonacci(int number)
 {
-    // Fibonacci numbers are non-negative
     if (number < 0)
     {
         return false;
@@ -102,10 +97,6 @@ bool isFibonacci(int number)
 
 int main()
 {
-    // ============================================================
-    // PART A: PRINT FIRST N TERMS
-    // ============================================================
-
     int n;
 
     cout << "PART A - Fibonacci Sequence" << endl;
@@ -120,10 +111,6 @@ int main()
     {
         printFibonacci(n);
     }
-
-    // ============================================================
-    // PART B: CHECK A NUMBER
-    // ============================================================
 
     int number;
 
