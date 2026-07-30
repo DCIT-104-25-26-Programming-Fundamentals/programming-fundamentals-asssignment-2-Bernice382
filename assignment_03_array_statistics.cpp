@@ -44,7 +44,6 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-
 double calculateSum(double numbers[], int n)
 {
     double sum = 0;
